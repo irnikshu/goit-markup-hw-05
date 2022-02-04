@@ -122,8 +122,27 @@ img {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+.site-nav .link-nav:hover,
+.site-nav .link-nav:focus {
+  color: var(--accent-color);
+}
 .site-nav .link.current {
   color: var(--accent-color);
+}
+.link-nav::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: var(--accent-color);
+}
+.link-nav {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 30px;
 }
 
 .auth-nav {
